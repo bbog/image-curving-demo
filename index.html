@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Image Curving Demo</title>
+    <meta name="description" content="Drawing a curved image with a HTML5 canvas and JavaScript"/>
+    <meta name="keywords" content="curved image,javascript,canvas"/>
+
+    <!-- # Facebook Open Graph tags -->
+    <meta property="og:title" content="Image Curving Demo"/> 
+    <meta property="og:type" content="website"/> 
+    <meta property="og:url" content="http://awesomestsite.com/itsybitsybytes-blog-posts/image-curving-demo/"/> 
+    <meta property="og:image" content="http://awesomestsite.com/itsybitsybytes-blog-posts/image-curving-demo/test_image.jpg"/> 
+    <meta property="og:description" content="Drawing a curved image with a HTML5 canvas and JavaScript"/>
+
+    <!-- #LinkedIn tags -->
+    <meta property="linkedIn:title" content="Image Curving Demo"/>
+    <meta property="linkedIn:url" content="http://awesomestsite.com/itsybitsybytes-blog-posts/image-curving-demo/"/>
+    <meta property="linkedIn:image" content="http://awesomestsite.com/itsybitsybytes-blog-posts/image-curving-demo/test_image.jpg"/> 
+    <meta property="linkedIn:summary" content="Drawing a curved image with a HTML5 canvas and JavaScript"/>
+
+    <!-- css styles -->
+    <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/base.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- fork me on github -->
+        <a href="https://github.com/bbog/image-curving-demo">
+            <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+        </a>
+
+        <!-- main header -->
+        <h1>Curved image</h1>
+        <hr/>
+
+        <p>How to curve an image using JavaScript and a &lt;canvas&gt; element.</p>
+
+        <p>This is a demo / proof of concept built for my blog post <a href="https://itsybitsybytes.com/drawing-a-curved-image-with-a-html5-canvas-and-javascript">Drawing a curved image with a HTML5 canvas and JavaScript</a> on <a href="https://itsybitsybytes.com/">Itsy Bitsy Bytes</a>. You can read the post for more info or check out the source on GitHub: <a href="https://github.com/bbog/image-curving-demo">Image Curving Demo</a>. Simply select different options and press on the Warp Image button to see the result!</p>
+
+        <hr>
+
+        <!-- curving options -->
+        <h2>Options</h2>
+
+
+        <label>Warp percentage </label>
+        <label>0.0</label>
+        <input id="warp_percentage" type="range" min="0" max="1" value="0.3" step="0.01">
+        <label>1.0</label>
+        <br/>
+        <span>Note: curving the image has nothing to do with percentages, this was simply my desired choice of controlling the curve level.</span>
+        <br/>
+        <br/>
+
+        <label>Horizontal </label>
+        <input name="warp_orientation" type="radio" value="horizontal">
+        <span class="spacer"></span>
+
+        <label>Vertical </label>
+        <input name="warp_orientation" type="radio" value="vertical" checked>
+        <span class="spacer"></span>
+
+        <label>Invert curve </label>
+        <input id="invert_curve" type="checkbox">
+        <br/>
+        <br/>
+
+        <button onclick="warpImage()">Warp Image</button>
+
+        <hr>
+
+        <h2>Result</h2>
+
+        <img id="warped_image">
+
+        <hr>
+
+        
+
+        <footer>Developed by <a href="http://bogdanbucur.eu">Bogdan BUCUR</a></footer>
+
+        <script src="js/main.js"></script>
+    </div>
+</body>
+

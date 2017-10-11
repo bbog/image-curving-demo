@@ -1,0 +1,20 @@
+/** Specific CSS  **/
+#warped_image {
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+input {
+	vertical-align: top;
+}
+
+span {
+	font-size: 0.9em;
+	font-style: cursive;
+}
+
+span.spacer {
+	display: inline-block;
+	width: 1em;
+}
